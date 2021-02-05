@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PAYO</string>
+    <string name="prompt_email">Email ID</string>
+    <string name="prompt_password">Password</string>
+    <string name="don_t_have_an_account">Don\'t have an account</string>
+    <string name="already_have_an_account">Already have an account ??</string>
+    <string name="sign_in"><u>Log In</u></string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="cnf_pas">Confirm Password</string>
+    <string name="my_text">This is an <u>underline</u>.</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

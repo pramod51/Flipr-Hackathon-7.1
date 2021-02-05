@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:foregroundGravity="center"
+                    android:id="@+id/animationView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    app:lottie_autoPlay="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-30dp"
+                    app:lottie_fileName="welcome_anim1.json"
+                    app:lottie_loop="true"/>
+                <ImageView
+
+                    android:layout_marginTop="110dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/images_payo"
+                    android:layout_marginBottom="40dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"> </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/actor"
+                    android:text="Banking Aur Bahi Khata Ek Saath"
+                    android:textColor="#22ACF6"
+                    android:textSize="20dp"
+                    android:textStyle="bold"> </TextView>
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_error"
+                android:layout_width="match_parent"
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:errorEnabled="true"
+                android:hint="@string/prompt_email"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_mail"
+                    android:textColor="@color/black"
+                    android:drawableStart="@drawable/gmail"
+                    android:drawablePadding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Design.TextInputLayout"
+                android:id="@+id/outlinedText_sign_pass"
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:endIconMode="password_toggle"
+                app:errorEnabled="true"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:drawableStart="@drawable/lock"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/login"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:cornerRadius="10dp"> </com.google.android.material.button.MaterialButton>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#CC000000"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/don_t_have_an_account"> </TextView>
+                <TextView
+                    android:id="@+id/sign_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"> </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
